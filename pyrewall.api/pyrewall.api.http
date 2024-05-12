@@ -1,0 +1,6 @@
+@pyrewall.api_HostAddress = http://localhost:5131
+
+GET {{pyrewall.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

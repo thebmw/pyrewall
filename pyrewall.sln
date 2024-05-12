@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.utils", "pyrewall.utils\pyrewall.utils.csproj", "{F1CB8AB3-13A8-4E8C-B929-1C0A27E158AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.api", "pyrewall.api\pyrewall.api.csproj", "{4958B1AA-EF97-406E-86F6-2A0B24B5CF68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.db", "pyrewall.db\pyrewall.db.csproj", "{F45894E7-04E5-4AF3-9697-C6039412552F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.cmd", "pyrewall.cmd\pyrewall.cmd.csproj", "{3FF8F6C4-096C-4E24-BFF7-A457E1D70AFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.cli", "pyrewall.cli\pyrewall.cli.csproj", "{B6C01B2B-2946-40E3-89AB-FCECD47F832F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1CB8AB3-13A8-4E8C-B929-1C0A27E158AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CB8AB3-13A8-4E8C-B929-1C0A27E158AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CB8AB3-13A8-4E8C-B929-1C0A27E158AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CB8AB3-13A8-4E8C-B929-1C0A27E158AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4958B1AA-EF97-406E-86F6-2A0B24B5CF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4958B1AA-EF97-406E-86F6-2A0B24B5CF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4958B1AA-EF97-406E-86F6-2A0B24B5CF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4958B1AA-EF97-406E-86F6-2A0B24B5CF68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45894E7-04E5-4AF3-9697-C6039412552F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45894E7-04E5-4AF3-9697-C6039412552F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45894E7-04E5-4AF3-9697-C6039412552F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45894E7-04E5-4AF3-9697-C6039412552F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF8F6C4-096C-4E24-BFF7-A457E1D70AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF8F6C4-096C-4E24-BFF7-A457E1D70AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF8F6C4-096C-4E24-BFF7-A457E1D70AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF8F6C4-096C-4E24-BFF7-A457E1D70AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C01B2B-2946-40E3-89AB-FCECD47F832F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C01B2B-2946-40E3-89AB-FCECD47F832F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C01B2B-2946-40E3-89AB-FCECD47F832F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C01B2B-2946-40E3-89AB-FCECD47F832F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
