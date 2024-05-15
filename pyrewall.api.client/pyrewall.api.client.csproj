@@ -7,12 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="entities\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.4" />
+      <ProjectReference Include="..\pyrewall.models\pyrewall.models.csproj" />
+      <ProjectReference Include="..\pyrewall.utils\pyrewall.utils.csproj" />
     </ItemGroup>
 
 </Project>

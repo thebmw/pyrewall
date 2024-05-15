@@ -10,6 +10,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.cmd", "pyrewall.cm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.cli", "pyrewall.cli\pyrewall.cli.csproj", "{B6C01B2B-2946-40E3-89AB-FCECD47F832F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.models", "pyrewall.models\pyrewall.models.csproj", "{2207C4F2-B2BA-4CFC-8BC2-1FB880BA20DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.services", "pyrewall.services\pyrewall.services.csproj", "{D62E8531-CABE-4162-A3E2-80B190DEF876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.api.client", "pyrewall.api.client\pyrewall.api.client.csproj", "{7F79D9B8-96BD-4FAF-94C6-1EC0AAB72A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libnftables", "libnftables\libnftables.csproj", "{556429A0-A3B1-4A35-A61A-6483830AFD53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +44,21 @@ Global
 		{B6C01B2B-2946-40E3-89AB-FCECD47F832F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6C01B2B-2946-40E3-89AB-FCECD47F832F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6C01B2B-2946-40E3-89AB-FCECD47F832F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2207C4F2-B2BA-4CFC-8BC2-1FB880BA20DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2207C4F2-B2BA-4CFC-8BC2-1FB880BA20DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2207C4F2-B2BA-4CFC-8BC2-1FB880BA20DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2207C4F2-B2BA-4CFC-8BC2-1FB880BA20DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62E8531-CABE-4162-A3E2-80B190DEF876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62E8531-CABE-4162-A3E2-80B190DEF876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62E8531-CABE-4162-A3E2-80B190DEF876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62E8531-CABE-4162-A3E2-80B190DEF876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F79D9B8-96BD-4FAF-94C6-1EC0AAB72A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F79D9B8-96BD-4FAF-94C6-1EC0AAB72A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F79D9B8-96BD-4FAF-94C6-1EC0AAB72A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F79D9B8-96BD-4FAF-94C6-1EC0AAB72A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{556429A0-A3B1-4A35-A61A-6483830AFD53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556429A0-A3B1-4A35-A61A-6483830AFD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556429A0-A3B1-4A35-A61A-6483830AFD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556429A0-A3B1-4A35-A61A-6483830AFD53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
