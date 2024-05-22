@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.api.client", "pyre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libnftables", "libnftables\libnftables.csproj", "{556429A0-A3B1-4A35-A61A-6483830AFD53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyrewall.privleged", "pyrewall.privleged\pyrewall.privleged.csproj", "{1C974D8D-43AB-42F9-BD91-F533E789016D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{556429A0-A3B1-4A35-A61A-6483830AFD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{556429A0-A3B1-4A35-A61A-6483830AFD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{556429A0-A3B1-4A35-A61A-6483830AFD53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C974D8D-43AB-42F9-BD91-F533E789016D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C974D8D-43AB-42F9-BD91-F533E789016D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C974D8D-43AB-42F9-BD91-F533E789016D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C974D8D-43AB-42F9-BD91-F533E789016D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
