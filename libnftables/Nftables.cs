@@ -7,6 +7,7 @@ public class Nftables : IDisposable
     public Nftables()
     {
         _ctx = Native.nft_ctx_new(0);
+        Console.WriteLine($"{_ctx:X}");
         var output = Native.nft_ctx_buffer_output(_ctx);
         var error = Native.nft_ctx_buffer_error(_ctx);
     }
@@ -14,6 +15,7 @@ public class Nftables : IDisposable
     public void Dispose()
     {
         Native.nft_ctx_free(_ctx);
+        GC.SuppressFinalize(this);
     }
 
     private bool GetOutputFlag(NftablesOutputFlags flag)
@@ -53,11 +55,17 @@ public class Nftables : IDisposable
     public CommandResult RunCommand(string commandLine)
     {
         var rc = Native.nft_run_cmd_from_buffer(_ctx, commandLine);
-        var result = new CommandResult()
+        Console.WriteLine("foo");
+        var output = Native.nft_ctx_get_output_buffer(_ctx);
+        Console.WriteLine(output);
+        Console.WriteLine("bar");
+        var error = Native.nft_ctx_get_error_buffer(_ctx);
+        Console.WriteLine("baz");
+        var result = new CommandResult()    
         {
             ResultCode = rc,
-            Output = Native.nft_ctx_get_output_buffer(_ctx),
-            Error = Native.nft_ctx_get_error_buffer(_ctx)
+            Output = output,
+            Error = error  
         };
         
         return result;
