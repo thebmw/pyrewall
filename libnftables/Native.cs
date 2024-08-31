@@ -35,10 +35,10 @@ internal static class Native
     public static extern int nft_run_cmd_from_filename(IntPtr ctx, String filename);
     
     [DllImport("libnftables.so.1", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
-    public static extern String nft_ctx_get_output_buffer(IntPtr ctx);
+    public static extern IntPtr nft_ctx_get_output_buffer(IntPtr ctx);
     
     [DllImport("libnftables.so.1", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
-    public static extern String nft_ctx_get_error_buffer(IntPtr ctx);
+    public static extern IntPtr nft_ctx_get_error_buffer(IntPtr ctx);
     
     [DllImport("libnftables.so.1", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
     public static extern bool nft_ctx_get_dry_run(IntPtr ctx);

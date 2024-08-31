@@ -3,6 +3,6 @@ namespace libnftables;
 public class CommandResult
 {
     public int ResultCode { get; set; }
-    public String Output { get; set; } = null!;
-    public String Error { get; set; } = null!;
+    public string? Output { get; set; } = null!;
+    public string? Error { get; set; } = null!;
 }

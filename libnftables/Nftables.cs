@@ -1,4 +1,6 @@
-﻿namespace libnftables;
+﻿using System.Runtime.InteropServices;
+
+namespace libnftables;
 
 public class Nftables : IDisposable
 {
@@ -55,17 +57,13 @@ public class Nftables : IDisposable
     public CommandResult RunCommand(string commandLine)
     {
         var rc = Native.nft_run_cmd_from_buffer(_ctx, commandLine);
-        Console.WriteLine("foo");
         var output = Native.nft_ctx_get_output_buffer(_ctx);
-        Console.WriteLine(output);
-        Console.WriteLine("bar");
         var error = Native.nft_ctx_get_error_buffer(_ctx);
-        Console.WriteLine("baz");
         var result = new CommandResult()    
         {
             ResultCode = rc,
-            Output = output,
-            Error = error  
+            Output = Marshal.PtrToStringAnsi(output),
+            Error = Marshal.PtrToStringAnsi(error)  
         };
         
         return result;
@@ -74,11 +72,13 @@ public class Nftables : IDisposable
     public CommandResult RunCommandFromFile(string filename)
     {
         var rc = Native.nft_run_cmd_from_filename(_ctx, filename);
+        var output = Native.nft_ctx_get_output_buffer(_ctx);
+        var error = Native.nft_ctx_get_error_buffer(_ctx);
         var result = new CommandResult()
         {
             ResultCode = rc,
-            Output = Native.nft_ctx_get_output_buffer(_ctx),
-            Error = Native.nft_ctx_get_error_buffer(_ctx)
+            Output = Marshal.PtrToStringAnsi(output),
+            Error = Marshal.PtrToStringAnsi(error)  
         };
         
         return result;
