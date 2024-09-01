@@ -1,7 +1,7 @@
 using Grpc.Core;
-using pyrewall.privleged;
+using pyrewall.privileged;
 
-namespace pyrewall.privleged.Services;
+namespace pyrewall.privileged.Services;
 
 public class GreeterService : Greeter.GreeterBase
 {

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "pyrewall.privileged";
+
+package systeminfo;
+
+service SystemInfo {
+  rpc GetSystemInfo (voidNoParam) returns (SystemInfoResponse);
+}
+
+message voidNoParam {}
+
+message SystemInfoResponse {
+  string hostname = 1;
+}

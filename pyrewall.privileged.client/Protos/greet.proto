@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "pyrewall.privleged";
+option csharp_namespace = "pyrewall.privileged";
 
 package greet;
 
